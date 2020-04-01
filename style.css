@@ -56,4 +56,17 @@ html, body {
     width: 45%;
     padding: 20px; }
 
+@media (max-width: 600px) {
+  #header {
+    height: 100%;
+    padding: 20px 0; }
+    #header #header-content img {
+      width: 100%; } }
+@media (max-width: 900px) {
+  #main {
+    padding: 0 20px; }
+    #main .logos img {
+      width: 100%;
+      padding: 20px 0; } }
+
 /*# sourceMappingURL=style.css.map */

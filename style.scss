@@ -2,6 +2,9 @@ $hacksoc-purple: rgba(55,45,67,1);
 $compsoc-blue: rgba(8,71,88,1);
 $background: #F3F2F4;
 
+$logo-image-width: 600px;
+$content-width: 900px;
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -58,7 +61,7 @@ html, body {
 
 #main {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: $content-width;
     
     p {
         font-size: 1.3em;
@@ -79,5 +82,27 @@ html, body {
         vertical-align: middle;
         width: 45%;
         padding: 20px;
+    }
+}
+
+@media(max-width: $logo-image-width) {
+    #header {
+        height: 100%;
+        padding: 20px 0;
+
+        #header-content img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: $content-width) {
+    #main {
+        padding: 0 20px;
+
+        .logos img {
+            width: 100%;
+            padding: 20px 0;
+        }
     }
 }
