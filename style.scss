@@ -1,0 +1,83 @@
+$hacksoc-purple: rgba(55,45,67,1);
+$compsoc-blue: rgba(8,71,88,1);
+$background: #F3F2F4;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+}
+
+#header {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $hacksoc-purple;
+    background: linear-gradient(90deg, $hacksoc-purple 0%, $compsoc-blue 100%);
+}
+
+#header-content {
+    width: 600px;
+
+    .subtitle {
+        font-size: 2em;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        text-align: center;
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+
+            transition: background-color 0.15s linear, color 0.15s linear;
+            &:hover {
+                background-color: white;
+                color: $hacksoc-purple;
+            }
+        }
+    }
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 900px;
+    
+    p {
+        font-size: 1.3em;
+    }
+
+    small {
+        font-size: 1em;
+    }
+
+    hr {
+        margin: 40px 0;
+        height: 1px;
+        background-color: darken($background, 20%);
+        border: none;
+    }
+
+    .logos img {
+        vertical-align: middle;
+        width: 45%;
+        padding: 20px;
+    }
+}
