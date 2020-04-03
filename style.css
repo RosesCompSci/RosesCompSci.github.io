@@ -56,8 +56,10 @@ html, body {
 #main {
   margin: 0 auto;
   max-width: 900px; }
-  #main p, #main li, #main ul {
+  #main p {
     font-size: 1.3em; }
+  #main ul, #main li {
+    font-size: 1.1em; }
   #main small {
     font-size: 1em; }
   #main hr {

@@ -88,8 +88,12 @@ html, body {
     margin: 0 auto;
     max-width: $content-width;
     
-    p, li, ul {
+    p {
         font-size: 1.3em;
+    }
+
+    ul, li {
+        font-size: 1.1em;
     }
 
     small {
