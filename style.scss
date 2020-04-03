@@ -5,6 +5,19 @@ $background: #F3F2F4;
 $logo-image-width: 600px;
 $content-width: 900px;
 
+$heading-font: LeagueSpartan;
+$subheading-font: CooperHewitt;
+
+@font-face {
+    font-family: $heading-font;
+    src: url("LeagueSpartan.otf") format("opentype");
+}
+
+@font-face {
+    font-family: $subheading-font;
+    src: url("CooperHewitt.otf") format("opentype");
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -29,11 +42,23 @@ html, body {
 #header-content {
     width: 600px;
 
-    .subtitle {
-        font-size: 2em;
+    .logo {
+        width: 100%;
         color: white;
-        margin: 0 auto;
+        font-size: 3em;
         text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        div {
+            font-family: $heading-font, sans-serif;
+            margin: 10px 0;
+        }
+
+        .sub {
+            font-family: $subheading-font, sans-serif;
+            font-size: 0.8em;
+        }
     }
 
     .buttons {

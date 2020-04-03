@@ -1,3 +1,9 @@
+@font-face {
+  font-family: LeagueSpartan;
+  src: url("LeagueSpartan.otf") format("opentype"); }
+@font-face {
+  font-family: CooperHewitt;
+  src: url("CooperHewitt.otf") format("opentype"); }
 * {
   font-family: 'Open Sans', sans-serif; }
 
@@ -17,11 +23,19 @@ html, body {
 
 #header-content {
   width: 600px; }
-  #header-content .subtitle {
-    font-size: 2em;
+  #header-content .logo {
+    width: 100%;
     color: white;
-    margin: 0 auto;
-    text-align: center; }
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+    #header-content .logo div {
+      font-family: LeagueSpartan, sans-serif;
+      margin: 10px 0; }
+    #header-content .logo .sub {
+      font-family: CooperHewitt, sans-serif;
+      font-size: 0.8em; }
   #header-content .buttons {
     margin-top: 20px;
     text-align: center; }
