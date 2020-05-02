@@ -76,9 +76,14 @@ html, body {
             cursor: pointer;
 
             transition: background-color 0.15s linear, color 0.15s linear;
-            &:hover {
+            &:hover &:not(:hover) {
                 background-color: white;
                 color: $hacksoc-purple;
+            }
+
+            &:disabled {
+                color: grey;
+                border: 2px solid grey;
             }
         }
     }
