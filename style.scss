@@ -117,6 +117,13 @@ html, body {
         width: 45%;
         padding: 20px;
     }
+
+    #taken-place-box {
+        margin-top: 20px;
+        background-color: lighten($hacksoc-purple, 50%);
+        padding: 20px;
+        border: 2px solid black;
+    }
 }
 
 @media(max-width: $logo-image-width) {

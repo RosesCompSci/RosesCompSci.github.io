@@ -74,6 +74,11 @@ html, body {
     vertical-align: middle;
     width: 45%;
     padding: 20px; }
+  #main #taken-place-box {
+    margin-top: 20px;
+    background-color: #b6a9c6;
+    padding: 20px;
+    border: 2px solid black; }
 
 @media (max-width: 600px) {
   #header {
